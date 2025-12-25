@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --themeclr: #212121;
+  --txtClr: #12110D;
+  --secondary-txtClr: #323232;
+}
+
+body {
+  font-family: "Bricolage Grotesque", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--themeclr) !important;
+  color: var(--txtClr) !important;
+  color: var(--white) !important;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0px !important;
+}
+
+hr {
+  margin: 0 !important;
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* custom input start */
+
+.customInpGrp .form-label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.custom_formLabel {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.customInput {
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  background-color: transparent !important;
+  border-radius: 5px !important;
+  font-size: 15px !important;
+  min-height: 40px !important;
+  box-shadow: none !important;
+  color: var(--secondary-txtClr) !important;
+
+}
+
+.customInput::placeholder {
+  color: var(--txtClr1) !important;
+  opacity: 0.7 !important;
+  font-size: 13px;
+}
+
+.label-mandatory {
+  color: red;
+}
+
+.networkStatus {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 7px;
+}
+
+.networkStatus .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.networkStatus .dot.green {
+  background-color: green;
+}
+
+.networkStatus .dot.red {
+  background-color: red;
+}
+
+.networkStatus .text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.networkStatus .text.green {
+  color: green;
+}
+
+.networkStatus .text.red {
+  color: red;
+}
